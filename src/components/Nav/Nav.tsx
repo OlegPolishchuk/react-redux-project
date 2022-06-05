@@ -16,6 +16,9 @@ const Nav: React.FC = (): ReturnComponentType => (
       <li>
         <NavLink to={PATH.TESTS}>Test</NavLink>
       </li>
+      <li>
+        <NavLink to={PATH.SIGN_UP}>Sign up</NavLink>
+      </li>
     </ul>
   </nav>
 );
