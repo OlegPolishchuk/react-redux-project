@@ -7,7 +7,7 @@ type DefaultButtonPropsType = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 >;
-type VariantType = 'red' | 'white' | 'purple' | 'outline';
+export type VariantType = 'red' | 'white' | 'purple' | 'outline' | 'default';
 type SuperButtonPropsType = DefaultButtonPropsType & {
   // eslint-disable-next-line react/require-default-props
   red?: boolean;
@@ -34,6 +34,9 @@ const SuperButton: React.FC<SuperButtonPropsType> = ({
       break;
     case 'outline':
       btnVariant = s.outline;
+      break;
+    case 'default':
+      btnVariant = s.default;
       break;
     default:
       btnVariant = s.default;
