@@ -1,0 +1,20 @@
+@import "./src/common/style/sass/mixins";
+
+.nav {
+  @include container();
+  padding: 20px 0;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  li {
+    margin-right: 25px;
+  }
+  a {
+    color: #fff;
+    font-size: 22px;
+    &:hover {
+      color: #ff4646;
+    }
+  }
+}

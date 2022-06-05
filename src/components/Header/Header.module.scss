@@ -1,0 +1,17 @@
+@import "./src/common/style/sass/mixins";
+@import "./src/common/style/sass/variables";
+
+.header {
+  background: #2d2c2c;
+  color: #fff;
+  .container {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    color: #fff;
+  }
+}
