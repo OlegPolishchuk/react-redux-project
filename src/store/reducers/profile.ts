@@ -1,8 +1,7 @@
-const initialState = {};
-
+export const initialState = {};
 export type InitialStateType = typeof initialState;
 
-export const loginReducer = (
+export const profileReducer = (
   state: InitialStateType = initialState,
   action: any,
 ): InitialStateType => {
